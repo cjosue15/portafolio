@@ -21,8 +21,9 @@ h3 {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: calc(1140px - 2em);
   width: 100%;
+  padding: 0 2em;
   margin: 0 auto;
 }
 
@@ -57,6 +58,13 @@ h3 {
   font-family: inherit;
   font-size: 18px;
   letter-spacing: 1px;
+}
+
+P.cooming {
+  font-size: 50px;
+  color: #16c79a;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
