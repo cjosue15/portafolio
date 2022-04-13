@@ -1,0 +1,80 @@
+@import 'colors';
+@import 'variables';
+
+$size : 25px;
+
+.home {
+
+  text-align: center;
+
+  a {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    display: inline-block;
+    margin-right: $gap;
+    background-color: transparent;
+  }
+
+  &__wrapper {
+    &-profile {
+      max-width: 300px;
+        margin: 0 auto;
+    }
+  }
+
+  &__social {
+    margin-top: $gap;
+
+    a {
+      width: $size;
+      height: $size;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  &__description {
+    margin-top: $gap;
+
+    p {
+      font-weight: 700;
+    }
+  }
+
+  &__download {
+    margin-top: $gap * 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &-green {
+      display: flex;
+      align-items: center;
+      color: $white;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+
+    a {
+      width: $size + 5;
+      height: $size + 5;
+      background-color: $grayLighten;
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $radius;
+      margin-right: 0;
+    }
+
+  }
+
+}
