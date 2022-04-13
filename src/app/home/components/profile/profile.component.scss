@@ -1,0 +1,31 @@
+$pictureSize: 120px;
+$mb: 15px;
+
+.profile {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__picture {
+    margin-bottom: $mb;
+
+    picture {
+      display: inline-block;
+      height: $pictureSize;
+      width: $pictureSize;
+      border-radius: 50%;
+      overflow: hidden;
+      vertical-align: bottom;
+
+      img {
+        vertical-align: bottom;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__name {
+    margin-bottom: 5px;
+  }
+}
