@@ -1,0 +1,12 @@
+<div class="loader" *ngIf="show">
+  <div class="loader__wrapper">
+    <div class="atom-spinner" [ngStyle]="spinnerStyle">
+      <div class="spinner-inner">
+        <div class="spinner-line" [ngStyle]="lineStyle"></div>
+        <div class="spinner-line" [ngStyle]="lineStyle"></div>
+        <div class="spinner-line" [ngStyle]="lineStyle"></div>
+        <div class="spinner-circle" [ngStyle]="circleStyle">&#9679;</div>
+      </div>
+    </div>
+  </div>
+</div>
