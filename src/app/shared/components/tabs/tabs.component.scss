@@ -1,0 +1,37 @@
+@import "variables";
+@import "colors";
+
+$size: 5px;
+
+.tabs {
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $gap * 2;
+    ul {
+      display: flex;
+      padding: $size;
+      margin: 0;
+      list-style: none;
+      gap: $gap;
+      background-color: $grayLighten;
+      border-radius: $radius * 2;
+
+      li {
+        $height: $sizeButton - $size * 2;
+        $radius: 8px;
+
+        height: $height;
+        line-height: $height;
+        border-radius: $radius;
+        cursor: pointer;
+        min-width: 120px;
+        font-size: 14px;
+
+        &.active {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div class="tabs" *ngIf="tabs$ | async as tabs">
+  <div class="tabs__header">
+    <ul>
+      <li
+        *ngFor="let tab of tabs; let index = index"
+        [class.active]="tab?.active"
+        (click)="selectTab(tab)"
+      >
+        {{ tab.label }}
+      </li>
+    </ul>
+  </div>
+  <div class="tabs__content">
+    <div class="tabs-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
