@@ -1,0 +1,30 @@
+@import "colors";
+
+$themes: (
+  light: (
+    title-color: $title-color,
+    text-color: $text-color,
+    body-color: $body-color,
+    svg-color: $svg-color,
+  ),
+  dark: (
+    title-color: $title-color-dark,
+    text-color: $text-color-dark,
+    body-color: $body-color-dark,
+    svg-color: $svg-color-dark,
+  ),
+);
+
+:root {
+  --title-color: #{map-get(map-get($themes, "light"), "title-color")};
+  --text-color: #{map-get(map-get($themes, "light"), "text-color")};
+  --body-color: #{map-get(map-get($themes, "light"), "body-color")};
+  --svg-color: #{map-get(map-get($themes, "light"), "svg-color")};
+}
+
+body.theme--dark {
+  --title-color: #{map-get(map-get($themes, "dark"), "title-color")};
+  --text-color: #{map-get(map-get($themes, "dark"), "text-color")};
+  --body-color: #{map-get(map-get($themes, "dark"), "body-color")};
+  --svg-color: #{map-get(map-get($themes, "dark"), "svg-color")};
+}
