@@ -1,8 +1,9 @@
+@import "colors";
+
 $pictureSize: 120px;
 $mb: 15px;
 
 .profile {
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,17 +16,32 @@ $mb: 15px;
       height: $pictureSize;
       width: $pictureSize;
       border-radius: 50%;
-      overflow: hidden;
-      vertical-align: bottom;
+      border: 3px solid $green;
+      padding: 3px;
 
-      img {
-        vertical-align: bottom;
-        max-width: 100%;
+      div {
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {
+          vertical-align: bottom;
+          max-width: 100%;
+        }
       }
     }
   }
 
   &__name {
     margin-bottom: 5px;
+
+    h2 {
+      color: var(--title-color);
+    }
+  }
+
+  &__title {
+    h5 {
+      color: var(--text-color);
+    }
   }
 }
