@@ -1,6 +1,6 @@
 // @import '~/styles/colors';
-@import 'colors';
-@import 'variables';
+@import "colors";
+@import "variables";
 
 $padding: 16px;
 
@@ -16,10 +16,10 @@ $padding: 16px;
     font-size: 16px;
     cursor: pointer;
     background-color: transparent;
+    box-shadow: 0 8px 24px rgba($color: $green, $alpha: 0.25);
 
     &.primary {
       background-color: $green;
     }
   }
 }
-
