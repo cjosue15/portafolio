@@ -1,0 +1,16 @@
+.navbar {
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    svg {
+      stroke: var(--svg-color);
+    }
+  }
+}
