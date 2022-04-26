@@ -1,12 +1,12 @@
+<app-loader> </app-loader>
+
 <div class="home">
   <div class="container">
     <div class="home__wrapper">
       <div class="home__wrapper-profile">
         <app-profile></app-profile>
 
-        <!-- social media -->
         <div class="home__social">
-          <!-- youtube -->
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,6 @@
             </svg>
           </a>
 
-          <!-- github -->
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +46,6 @@
             </svg>
           </a>
 
-          <!-- linkedIn -->
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -72,10 +70,11 @@
         </div>
 
         <div class="home__description">
-          <p>I Build with HTML, paint with CSS and destroy all with JS.</p>
+          <p>
+            I build with HTML, paint with CSS and destroy everything with JS.
+          </p>
         </div>
 
-        <!-- CV Button and wsp button -->
         <div class="home__download">
           <app-button [class]="'primary'">
             <div class="home__download-green">
@@ -99,28 +98,43 @@
               </svg>
             </div>
           </app-button>
-          <a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-brand-whatsapp"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#000"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-              <path
-                d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"
-              />
-            </svg>
-          </a>
         </div>
       </div>
     </div>
+
+    <app-tabs>
+      <app-tab-item [label]="'Projects'">
+        <div class="projects">
+          <div class="projects__item">
+            <picture>
+              <img src="assets/images/project.jpg" alt="Project1" />
+            </picture>
+          </div>
+          <div class="projects__item">
+            <picture>
+              <img src="assets/images/project.jpg" alt="Project1" />
+            </picture>
+          </div>
+          <div class="projects__item">
+            <picture>
+              <img src="assets/images/project.jpg" alt="Project1" />
+            </picture>
+          </div>
+          <div class="projects__item">
+            <picture>
+              <img src="assets/images/project.jpg" alt="Project1" />
+            </picture>
+          </div>
+          <div class="projects__item">
+            <picture>
+              <img src="assets/images/project.jpg" alt="Project1" />
+            </picture>
+          </div>
+        </div>
+      </app-tab-item>
+      <app-tab-item [label]="'Expirence'">
+        <p>Holi 2</p>
+      </app-tab-item>
+    </app-tabs>
   </div>
 </div>

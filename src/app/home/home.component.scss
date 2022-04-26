@@ -1,10 +1,10 @@
-@import 'colors';
-@import 'variables';
+@import "colors";
+@import "variables";
 
-$size : 25px;
+$size: 25px;
+$radiusProject: 10px;
 
 .home {
-
   text-align: center;
 
   a {
@@ -17,9 +17,11 @@ $size : 25px;
   }
 
   &__wrapper {
+    margin-bottom: $gap * 3;
+
     &-profile {
       max-width: 300px;
-        margin: 0 auto;
+      margin: 0 auto;
     }
   }
 
@@ -29,12 +31,14 @@ $size : 25px;
     a {
       width: $size;
       height: $size;
+      svg {
+        stroke: var(--svg-color);
+      }
 
       &:last-child {
         margin-right: 0;
       }
     }
-
   }
 
   &__description {
@@ -47,11 +51,10 @@ $size : 25px;
 
   &__download {
     margin-top: $gap * 2;
-
+    // margin-bottom: $gap * 2;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
 
     &-green {
       display: flex;
@@ -62,19 +65,24 @@ $size : 25px;
         margin-right: 10px;
       }
     }
-
-    a {
-      width: $size + 5;
-      height: $size + 5;
-      background-color: $grayLighten;
-      padding: 2px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: $radius;
-      margin-right: 0;
-    }
-
   }
+}
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $gap * 2;
+
+  &__item {
+    border-radius: $radiusProject;
+    overflow: hidden;
+    picture {
+      display: inline-block;
+
+      img {
+        vertical-align: bottom;
+        max-width: 100%;
+      }
+    }
+  }
 }
