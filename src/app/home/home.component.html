@@ -7,7 +7,7 @@
         <app-profile></app-profile>
 
         <div class="home__social">
-          <a>
+          <a (click)="openSocialMedia(SocialMediaEnum.YOUTUBE)">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-youtube"
@@ -26,7 +26,7 @@
             </svg>
           </a>
 
-          <a>
+          <a (click)="openSocialMedia(SocialMediaEnum.GITHUB)">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-github"
@@ -46,7 +46,7 @@
             </svg>
           </a>
 
-          <a>
+          <a (click)="openSocialMedia(SocialMediaEnum.LINKEDIN)">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-linkedin"
