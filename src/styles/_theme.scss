@@ -6,12 +6,14 @@ $themes: (
     text-color: $text-color,
     body-color: $body-color,
     svg-color: $svg-color,
+    container-color: $container-color,
   ),
   dark: (
     title-color: $title-color-dark,
     text-color: $text-color-dark,
     body-color: $body-color-dark,
     svg-color: $svg-color-dark,
+    container-color: $container-color-dark,
   ),
 );
 
@@ -20,6 +22,7 @@ $themes: (
   --text-color: #{map-get(map-get($themes, "light"), "text-color")};
   --body-color: #{map-get(map-get($themes, "light"), "body-color")};
   --svg-color: #{map-get(map-get($themes, "light"), "svg-color")};
+  --container-color: #{map-get(map-get($themes, "light"), "container-color")};
 }
 
 body.theme--dark {
@@ -27,4 +30,5 @@ body.theme--dark {
   --text-color: #{map-get(map-get($themes, "dark"), "text-color")};
   --body-color: #{map-get(map-get($themes, "dark"), "body-color")};
   --svg-color: #{map-get(map-get($themes, "dark"), "svg-color")};
+  --container-color: #{map-get(map-get($themes, "dark"), "container-color")};
 }
