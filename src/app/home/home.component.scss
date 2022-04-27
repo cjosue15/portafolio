@@ -70,8 +70,9 @@ $radiusProject: 10px;
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: $gap * 2;
+  grid-template-columns: repeat(2, 332px);
+  justify-content: center;
+  gap: $gap * 2 $gap * 3;
 
   &__item {
     border-radius: $radiusProject;

@@ -1,36 +1,44 @@
 @import "variables";
 @import "colors";
 
-$size: 5px;
+$size: 6px;
 
 .tabs {
   &__header {
     display: flex;
     justify-content: center;
-    margin-bottom: $gap * 2;
+    margin-bottom: $gap * 3;
+
     ul {
+      $radius: 12px;
       display: flex;
       padding: $size;
       margin: 0;
       list-style: none;
       gap: $gap;
-      background-color: $grayLighten;
-      border-radius: $radius * 2;
+      background-color: var(--container-color);
+      border-radius: $radius;
+      width: 330px;
+      transition: 0.3s ease;
 
-      li {
-        $height: $sizeButton - $size * 2;
-        $radius: 8px;
-
+      button {
+        $height: $sizeButton - $size;
+        border: none;
+        background-color: transparent;
+        width: 100%;
         height: $height;
         line-height: $height;
         border-radius: $radius;
+        color: var(--title-color);
         cursor: pointer;
-        min-width: 120px;
         font-size: 14px;
         font-weight: 500;
+        font-family: inherit;
+        transition: 0.3s ease;
 
         &.active {
-          background-color: $white;
+          background-color: var(--body-color);
+          transition: 0.3s ease;
         }
       }
     }
