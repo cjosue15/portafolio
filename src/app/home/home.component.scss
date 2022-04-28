@@ -2,7 +2,6 @@
 @import "variables";
 
 $size: 25px;
-$radiusProject: 10px;
 
 .home {
   text-align: center;
@@ -63,26 +62,6 @@ $radiusProject: 10px;
 
       span {
         margin-right: 10px;
-      }
-    }
-  }
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(2, 332px);
-  justify-content: center;
-  gap: $gap * 2 $gap * 3;
-
-  &__item {
-    border-radius: $radiusProject;
-    overflow: hidden;
-    picture {
-      display: inline-block;
-
-      img {
-        vertical-align: bottom;
-        max-width: 100%;
       }
     }
   }

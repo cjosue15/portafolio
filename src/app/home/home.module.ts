@@ -7,6 +7,7 @@ import { ButtonModule } from '../shared/components/button/button.module';
 import { TabsModule } from '../shared/components/tabs/tabs.module';
 import { TabItemModule } from '../shared/components/tabs/tab-item/tab-item.module';
 import { LoaderModule } from '../shared/components/loader/loader.module';
+import { ProjectsModule } from './components/projects/projects.module';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -17,6 +18,7 @@ import { LoaderModule } from '../shared/components/loader/loader.module';
     TabsModule,
     TabItemModule,
     LoaderModule,
+    ProjectsModule,
   ],
   exports: [HomeComponent],
 })
