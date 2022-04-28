@@ -1,4 +1,7 @@
+@import "variables";
+
 .navbar {
+  margin-bottom: $gap * 2;
   &__wrapper {
     display: flex;
     justify-content: flex-end;

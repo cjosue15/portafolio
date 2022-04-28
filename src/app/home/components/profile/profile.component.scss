@@ -1,6 +1,6 @@
 @import "colors";
 
-$pictureSize: 120px;
+$pictureSize: 110px;
 $mb: 15px;
 
 .profile {
@@ -19,6 +19,14 @@ $mb: 15px;
       border: 3px solid $green;
       padding: 3px;
 
+      @media screen and (min-width: 991px) {
+        $pictureSize: 130px;
+        & {
+          height: $pictureSize;
+          width: $pictureSize;
+        }
+      }
+
       div {
         overflow: hidden;
         border-radius: 50%;
@@ -36,6 +44,7 @@ $mb: 15px;
 
     h2 {
       color: var(--title-color);
+      font-size: var(--title-font-size);
     }
   }
 

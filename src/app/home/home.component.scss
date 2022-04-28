@@ -6,15 +6,6 @@ $size: 25px;
 .home {
   text-align: center;
 
-  a {
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    display: inline-block;
-    margin-right: $gap;
-    background-color: transparent;
-  }
-
   &__wrapper {
     margin-bottom: $gap * 3;
 
@@ -25,7 +16,11 @@ $size: 25px;
   }
 
   &__social {
-    margin-top: $gap;
+    margin-top: $gap + $gap / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
 
     a {
       width: $size;
@@ -33,24 +28,20 @@ $size: 25px;
       svg {
         stroke: var(--svg-color);
       }
-
-      &:last-child {
-        margin-right: 0;
-      }
     }
   }
 
   &__description {
-    margin-top: $gap;
+    margin-top: $gap * 2;
 
     p {
       font-weight: 700;
+      font-size: var(--normal-font-size);
     }
   }
 
   &__download {
     margin-top: $gap * 2;
-    // margin-bottom: $gap * 2;
     display: flex;
     align-items: center;
     justify-content: center;
