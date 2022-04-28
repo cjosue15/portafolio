@@ -1,0 +1,30 @@
+.home {
+    &__content {
+        h1 {
+            color: $white;
+            font-size: 70px;
+            line-height: 60px;
+            font-family: 'Montserrat', sans-serif;
+            // font-family: 'Open Sans', sans-serif;
+        }
+        h2 {
+            color: $green;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+            line-height: 40px;
+        }
+        h3 {
+            font-size: 25px;
+            line-height: 25px;
+            color: $gray;
+            // font-family: 'Roboto', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+        }
+        p {
+            color: $white;
+            font-family: inherit;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+    }
+}
