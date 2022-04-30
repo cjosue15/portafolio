@@ -7,6 +7,8 @@ $themes: (
     body-color: $body-color,
     svg-color: $svg-color,
     container-color: $container-color,
+    loader-color: $green,
+    bg-loader-color: rgba($container-color, 0.95),
   ),
   dark: (
     title-color: $title-color-dark,
@@ -14,6 +16,8 @@ $themes: (
     body-color: $body-color-dark,
     svg-color: $svg-color-dark,
     container-color: $container-color-dark,
+    loader-color: $white,
+    bg-loader-color: rgba($container-color-dark, 0.95),
   ),
 );
 
@@ -23,6 +27,8 @@ $themes: (
   --body-color: #{map-get(map-get($themes, "light"), "body-color")};
   --svg-color: #{map-get(map-get($themes, "light"), "svg-color")};
   --container-color: #{map-get(map-get($themes, "light"), "container-color")};
+  --loader-color: #{map-get(map-get($themes, "light"), "loader-color")};
+  --bg-loader-color: #{map-get(map-get($themes, "light"), "bg-loader-color")};
 }
 
 body.theme--dark {
@@ -31,4 +37,6 @@ body.theme--dark {
   --body-color: #{map-get(map-get($themes, "dark"), "body-color")};
   --svg-color: #{map-get(map-get($themes, "dark"), "svg-color")};
   --container-color: #{map-get(map-get($themes, "dark"), "container-color")};
+  --loader-color: #{map-get(map-get($themes, "dark"), "loader-color")};
+  --bg-loader-color: #{map-get(map-get($themes, "dark"), "bg-loader-color")};
 }

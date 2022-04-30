@@ -1,18 +1,24 @@
-import { Component, Input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  ChangeDetectorRef,
+} from '@angular/core';
 
 @Component({
   selector: 'app-loader',
   templateUrl: './loader.component.html',
   styleUrls: ['./loader.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoaderComponent {
   @Input() size = 60;
   @Input() animationDuration = 1000;
-  @Input() color = '#2a9d8f';
+  @Input() color = '';
 
   private _show = false;
 
-  constructor() {}
+  constructor(private _changeDetectorRef: ChangeDetectorRef) {}
 
   get show() {
     return this._show;
@@ -47,5 +53,6 @@ export class LoaderComponent {
 
   showOrHideSpinner(indicator: boolean) {
     this.show = indicator;
+    this._changeDetectorRef.detectChanges();
   }
 }

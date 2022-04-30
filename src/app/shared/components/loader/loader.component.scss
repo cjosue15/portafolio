@@ -1,8 +1,9 @@
 @import "colors";
+@import "theme";
 
 .loader {
   position: fixed;
-  background-color: rgba($color: $white, $alpha: 0.95);
+  background-color: var(--bg-loader-color);
   inset: 0;
   z-index: 10;
 
@@ -37,10 +38,10 @@
       animation-duration: 1s;
       border-left-width: calc(60px / 25);
       border-top-width: calc(60px / 25);
-      border-left-color: #ff1d5e;
       border-left-style: solid;
       border-top-style: solid;
       border-top-color: transparent;
+      color: var(--loader-color);
 
       &:nth-child(1) {
         animation: atom-spinner-animation-1 1s linear infinite;
@@ -61,11 +62,11 @@
     .spinner-circle {
       display: block;
       position: absolute;
-      color: #ff1d5e;
       font-size: calc(60px * 0.24);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      color: var(--loader-color);
     }
   }
 }
