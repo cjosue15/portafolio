@@ -15,4 +15,11 @@ export class HomeComponent {
       ...socialMediaURLS,
     };
   }
+
+  ngAfterViewInit(): void {
+    this.loader.showOrHideSpinner(true);
+    setTimeout(() => {
+      this.loader.showOrHideSpinner(false);
+    }, 3000);
+  }
 }
